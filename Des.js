@@ -10,18 +10,18 @@ const SITE_CONFIG = {
 };
 
 const artworks = [
-  { name: "Elie", file: "Draw/Elie.PNG", category: "realismo", date: "1 de setembro de 2025", description: "Estudo de realismo facial, buscando expressar a dor da perda, do ódio e da revolta." },
+  { name: "Elie (2025)", file: "Draw/Elie.PNG", category: "realismo", date: "1 de setembro de 2025", description: "Estudo de realismo facial, buscando expressar a dor da perda, do ódio e da revolta." },
   { name: "Griffrh", file: "Draw/Griffrh.PNG", category: "realismo", date: "21 de abril de 2025", description: "Releitura semi-realista do personagem Griffith, de Berserk." },
-  { name: "Freira", file: "Draw/Freira.PNG", category: "realismo", date: "27 de abril de 2025", description: "Estudo de realismo." },
-  { name: "KenEat", file: "Draw/KenEat.PNG", category: "realismo", date: "2 de fevereiro de 2025", description: "Expressão e contraste da dor do personagem Kaneki em abordagem semi-realista." },
-  { name: "Elie2022", file: "Draw/Elie2022.PNG", category: "realismo", date: "19 de dezembro de 2022", description: "Primeira versão da Elie." },
+  { name: "Freir", file: "Draw/Freira.PNG", category: "realismo", date: "27 de abril de 2025", description: "Estudo de realismo." },
+  { name: "Ken Eat", file: "Draw/KenEat.PNG", category: "realismo", date: "2 de fevereiro de 2025", description: "Expressão e contraste da dor do personagem Kaneki em abordagem semi-realista." },
+  { name: "Elie (2022)", file: "Draw/Elie2022.PNG", category: "realismo", date: "19 de dezembro de 2022", description: "Primeira versão da Elie." },
 
   { name: "Trunks", file: "Draw/Trunks.PNG", category: "anime", date: "3 de dezembro de 2024", description: "Trunks do Futuro." },
   { name: "Akasa", file: "Draw/Akasa.PNG", category: "anime", date: "18 de dezembro de 2025", description: "Akaza, de Kimetsu no Yaiba." },
   { name: "Gohan", file: "Draw/Gohan.PNG", category: "anime", date: "17 de janeiro de 2024", description: "Gohan." },
   { name: "Luffy", file: "Draw/Luffy.PNG", category: "anime", date: "2 de janeiro de 2024", description: "Luffy Gear 5." },
-  { name: "GokuSSj..", file: "Draw/GokuSSj..PNG", category: "anime", date: "25 de julho de 2024", description: "Teste de lápis no cabelo do Goku SSJ2." },
-  { name: "BalckG", file: "Draw/BalckG.PNG", category: "anime", date: "13 de janeiro de 2024", description: "Goku Black." },
+  { name: "GokuSSj", file: "Draw/GokuSSj..PNG", category: "anime", date: "25 de julho de 2024", description: "Teste de lápis no cabelo do Goku SSJ2." },
+  { name: "Balck", file: "Draw/BalckG.PNG", category: "anime", date: "13 de janeiro de 2024", description: "Goku Black." },
   { name: "Doflamingo", file: "Draw/Doflamingo.PNG", category: "anime", date: "16 de janeiro de 2024", description: "Donquixote Doflamingo." },
   { name: "KanekiKen", file: "Draw/KanekiKen.PNG", category: "anime", date: "13 de janeiro de 2024", description: "Ken Kaneki — Tokyo Ghoul." },
   { name: "Ken", file: "Draw/Ken.PNG", category: "anime", date: "20 de outubro de 2024", description: "Ken Kaneki." },
@@ -32,7 +32,7 @@ const artworks = [
 
   { name: "Guts", file: "Draw/Guts.PNG", category: "hachura", date: "31 de janeiro de 2025", description: "Guts." },
   { name: "ImAghoul", file: "Draw/ImAghoul.PNG", category: "hachura", date: "18 de janeiro de 2025", description: "Kaneki mask." },
-  { name: "Aura", file: "Draw/Aura.PNG", category: "hachura", date: "10 de fevereiro de 2024", description: "Solo Leveling." }
+  { name: "solo", file: "Draw/Aura.PNG", category: "hachura", date: "10 de fevereiro de 2024", description: "Solo Leveling." }
 ];
 
 const categoryNames = {
