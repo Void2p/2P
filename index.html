@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B0E14">
+  <meta name="description" content="2P — portfólio de desenho tradicional. Realismo, anime, pontilhismo e hachura.">
+  <title>2P — Portfólio artístico</title>
+  <link rel="icon" type="image/png" href="Draw/2p_gothic.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Des.css">
+  <script src="Des.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="2P — início">
+      <span class="brand-mark">2P<span>.</span></span>
+      <span class="brand-caption">ART / PORTFOLIO</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-link active">Início</a>
+      <a href="#galeria" class="nav-link">Galeria</a>
+      <a href="#encomendas" class="nav-link">Encomendas</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#contato" class="nav-link nav-contact">Contato <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> ARTISTA INDEPENDENTE <span class="eyebrow-index">01 — 05</span></p>
+        <p class="hero-name">2P<span class="blue-dot">.</span></p>
+        <h1>O traço é meu.<br><em>A interpretação é sua.</em></h1>
+        <p class="hero-description">Desenhos tradicionais que exploram contraste, textura e expressão. Do realismo ao universo dos animes, cada peça é feita à mão.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#galeria">Explorar galeria <span>↘</span></a>
+          <a class="button button-quiet" href="#encomendas">Solicitar encomenda <span>↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="status-dot"></span> DESENHO TRADICIONAL · FEITO À MÃO</div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-frame">
+          <div class="frame-top"><span>FIG. 001</span><span>ESTUDO / 2P</span></div>
+          <img src="Draw/Elie.PNG" alt="Desenho Elie, destaque do portfólio 2P" fetchpriority="high">
+          <div class="frame-bottom"><span>REALISMO</span><span id="hero-art-count">01 / 20</span></div>
+        </div>
+        <span class="hero-side-note">OBSERVAR<br>·<br>INTERPRETAR<br>·<br>CRIAR</span>
+        <span class="hero-orbit" aria-hidden="true">2P</span>
+      </div>
+      <a class="scroll-cue" href="#galeria"><span></span> ROLE PARA EXPLORAR</a>
+    </section>
+
+    <section class="gallery-section section-shell" id="galeria">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> SELEÇÃO DE TRABALHOS <span class="eyebrow-index">02 — 05</span></p>
+          <h2>Galeria<span class="blue-dot">.</span></h2>
+        </div>
+        <p class="section-intro">Cada desenho registra uma tentativa, uma técnica e um jeito diferente de enxergar uma imagem.</p>
+      </div>
+
+      <div class="gallery-toolbar">
+        <div class="filter-list" role="group" aria-label="Filtrar desenhos por categoria">
+          <button class="filter-button active" type="button" data-filter="todos" aria-pressed="true">Todos <span data-filter-count="todos">20</span></button>
+          <button class="filter-button" type="button" data-filter="realismo" aria-pressed="false">Realismo</button>
+          <button class="filter-button" type="button" data-filter="anime" aria-pressed="false">Anime</button>
+          <button class="filter-button" type="button" data-filter="pontilhismo" aria-pressed="false">Pontilhismo</button>
+          <button class="filter-button" type="button" data-filter="hachura" aria-pressed="false">Hachura</button>
+        </div>
+        <span class="gallery-count"><span id="visible-count" aria-live="polite" aria-atomic="true">20</span> OBRAS</span>
+      </div>
+
+      <div class="art-grid" id="art-grid" aria-live="off">
+        <!-- Os 20 trabalhos são inseridos pelo Des.js; os caminhos originais ficam preservados no catálogo. -->
+      </div>
+    </section>
+
+    <section class="commissions-section section-shell" id="encomendas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> TRABALHOS SOB PEDIDO <span class="eyebrow-index">03 — 05</span></p>
+          <h2>Uma ideia.<br><em>Um desenho.</em></h2>
+        </div>
+        <p class="section-intro">Desenhos físicos, feitos à mão em papel. Escolha um formato para consultar as dimensões e o valor inicial.</p>
+      </div>
+
+      <div class="paper-workbench">
+        <div class="paper-stage">
+          <div class="desk-label"><span>FORMATOS DISPONÍVEIS</span><span>SELECIONE UMA FOLHA ↘</span></div>
+          <div class="paper-options" role="group" aria-label="Escolha o formato do papel">
+            <button class="paper-option paper-a5" type="button" data-paper="a5" aria-pressed="false">
+              <span class="paper-code">A5</span><span class="paper-size">PEQUENO</span>
+            </button>
+            <button class="paper-option paper-a4 selected" type="button" data-paper="a4" aria-pressed="true">
+              <span class="paper-code">A4</span><span class="paper-size">MÉDIO</span>
+            </button>
+            <button class="paper-option paper-a3" type="button" data-paper="a3" aria-pressed="false">
+              <span class="paper-code">A3</span><span class="paper-size">GRANDE</span>
+            </button>
+          </div>
+          <p class="desk-caption">REPRESENTAÇÃO ILUSTRATIVA DAS PROPORÇÕES DOS FORMATOS</p>
+        </div>
+
+        <aside class="paper-details" aria-live="polite">
+          <p class="eyebrow">FORMATO SELECIONADO</p>
+          <p class="selected-paper-name" id="selected-paper-name">A4 <span>— MÉDIO</span></p>
+          <div class="detail-rule"></div>
+          <div class="detail-row"><span>DIMENSÕES</span><strong id="selected-paper-dimensions">21 × 29,7 cm</strong></div>
+          <div class="detail-row"><span>VALOR INICIAL</span><strong class="price" id="selected-paper-price">R$ 55</strong></div>
+          <p class="price-note">Valor-base para desenhos de complexidade comum. O orçamento final é combinado antes do início da produção.</p>
+          <a class="button button-primary button-full" href="#contato">Conversar sobre uma ideia <span>↗</span></a>
+        </aside>
+      </div>
+
+      <div class="commission-notice">
+        <span class="notice-symbol">i</span>
+        <p>Trabalhos muito detalhados, realistas ou com composição complexa podem receber orçamento individual. Como referência, a complexidade moderada pode acrescentar R$ 10; trabalhos muito detalhados, R$ 20 ou orçamento individual. <strong>Nenhum acréscimo é automático:</strong> o valor é avaliado e combinado com você.</p>
+      </div>
+
+      <div class="process-heading">
+        <p class="eyebrow"><span class="eyebrow-line"></span> COMO FUNCIONA</p>
+        <h3>Do primeiro contato à entrega.</h3>
+      </div>
+      <div class="process-grid">
+        <article class="process-item"><span class="process-number">01</span><h4>Solicitação</h4><p>Você explica sua ideia e envia referências, caso tenha.</p></article>
+        <article class="process-item"><span class="process-number">02</span><h4>Orçamento</h4><p>Avalio o pedido e informo o preço e o prazo estimado.</p></article>
+        <article class="process-item"><span class="process-number">03</span><h4>Pagamento</h4><p>50% para confirmar a encomenda e 50% após a conclusão, antes da entrega. O sinal faz parte do valor total.</p></article>
+        <article class="process-item"><span class="process-number">04</span><h4>Produção</h4><p>O desenho é produzido conforme o combinado. Você pode pedir atualizações quando desejar.</p></article>
+        <article class="process-item"><span class="process-number">05</span><h4>Alterações</h4><p>Pequenos ajustes podem ser conversados. Mudanças significativas podem alterar preço e prazo.</p></article>
+        <article class="process-item"><span class="process-number">06</span><h4>Entrega</h4><p>A entrega é física. Envio ou deslocamento são combinados separadamente; o original é entregue após a quitação.</p></article>
+        <article class="process-item"><span class="process-number">07</span><h4>Portfólio</h4><p>Nenhuma encomenda será publicada no portfólio sem sua autorização.</p></article>
+        <article class="process-item"><span class="process-number">08</span><h4>Cancelamento</h4><p>Antes da produção, o sinal é devolvido. Se já começou, considera-se o trabalho realizado. Se eu cancelar, o reembolso é integral.</p></article>
+      </div>
+    </section>
+
+    <section class="about-section section-shell" id="sobre">
+      <div class="about-index">
+        <p class="eyebrow"><span class="eyebrow-line"></span> UM POUCO SOBRE O ARTISTA <span class="eyebrow-index">04 — 05</span></p>
+        <span class="about-watermark">2P</span>
+      </div>
+      <div class="about-content">
+        <h2>Entre o detalhe<br>e o <em>contraste.</em></h2>
+        <div class="about-text">
+          <p class="about-lead">Sou 2P, artista autodidata. Trabalho principalmente com desenho tradicional, explorando técnicas como realismo, anime, pontilhismo e hachura.</p>
+          <p>Gosto de experimentar diferentes formas de construir imagem — seja pela precisão dos detalhes, pelo contraste ou pela repetição de pequenos traços e pontos.</p>
+        </div>
+        <div class="discipline-list">
+          <span>01 / REALISMO</span><span>02 / ANIME</span><span>03 / PONTILHISMO</span><span>04 / HACHURA</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contato">
+      <div class="contact-main">
+        <p class="eyebrow"><span class="eyebrow-line"></span> VAMOS TIRAR A IDEIA DO PAPEL <span class="eyebrow-index">05 — 05</span></p>
+        <h2>Tem uma ideia<br>em <em>mente?</em></h2>
+        <p>Envie uma mensagem contando o que imaginou. Se tiver referências, pode encaminhá-las junto com a descrição.</p>
+        <a class="button button-primary contact-instagram" id="instagram-link" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">Instagram <span>↗</span></a>
+        <p class="instagram-hint" id="instagram-hint">O endereço do perfil será adicionado em breve.</p>
+      </div>
+      <div class="contact-aside">
+        <span class="contact-aside-number">2P / 2026</span>
+        <p>DESENHO TRADICIONAL<br>FEITO À MÃO<br>COM INTENÇÃO.</p>
+        <span class="contact-aside-mark">✳</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio">2P<span>.</span></a>
+    <span>DESENVOLVIDO POR 2P © 2026</span>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true" tabindex="-1">
+    <button class="lightbox-close" type="button" aria-label="Fechar visualização">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Obra anterior">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="">
+      <figcaption><span id="lightbox-title"></span><span id="lightbox-category"></span><span id="lightbox-counter"></span></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Próxima obra">›</button>
+  </div>
+</body>
+</html>
